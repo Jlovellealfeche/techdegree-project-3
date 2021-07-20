@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #283036;
+    color: #384047;
 }
 
 #container {
@@ -19,8 +19,8 @@ body {
 }
 
 h1 {
-    background-color: black;
-    color: white;
+    background-color: #b4dde7;
+    color: #384047;
     margin: 0;
     padding: 20px 10px;
     text-align: center;
@@ -81,7 +81,7 @@ input#zip_code {
 
 .newsletter-container {
     line-height: 1.5em;
-    background: aliceblue;
+    background: cornsilk;
 }
 
 .check, .radio {
@@ -104,7 +104,7 @@ input[type="submit"] {
 } /* for the mouse when it hovers the submit button*/
 
 #button {
-    background: #52bab3;
+    background: rgb(185, 185, 238);
     font-weight: 500;
     margin: 1em;
     padding: 15px;
@@ -119,7 +119,7 @@ footer {
 }
 
 .bgc:hover {
-    background-color: rgb(181, 220, 238);
+    background-color: aliceblue;
 }
 
 
