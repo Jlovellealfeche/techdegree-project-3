@@ -122,6 +122,11 @@ input:focus,
 textarea:focus,
 .bgc:hover {
     background-color: aliceblue;
+    border-bottom: 3px solid rgba(0,0,0,0.05);
+    border-color: rebeccapurple;
+}
+
+
 }
 
 
