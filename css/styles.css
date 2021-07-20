@@ -118,6 +118,8 @@ footer {
     font-style: italic;
 }
 
+input:focus,
+textarea:focus,
 .bgc:hover {
     background-color: aliceblue;
 }
