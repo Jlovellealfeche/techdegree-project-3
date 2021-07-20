@@ -24,46 +24,49 @@
                 <hr class="hr2">
             <form class="form-contact" action="index.html" method="post">
 
-                <fieldset>
+                <fieldset class="user-contact">
                     <legend class="contact-info"> Contact Information</legend>
-                    <label for="name">Full Name</label>
-                    <input class="bgc" type="text" id="name" name="user_name" required>
+                        <label for="name">Full Name</label>
+                        <input class="bgc" type="text" id="name" name="user-name" placeholder="required" required>
 
-                    <label for="email">Email Address</label>
-                    <input class="bgc" type="email" id="email" name="user_email" required placeholder="email@website.com">
+                        <label for="email">Email Address</label>
+                        <input class="bgc" type="email" id="email" name="user-email" placeholder="required" required>
 
-                    <label for="phone">Phone Number</label>
-                    <input class="bgc" type="tel" id="phone" name="user_phone" required>
+                        <label for="phone">Phone Number</label>
+                        <input class="bgc" type="tel" id="phone" name="user-phone" placeholder="required" required>
 
-                    <label for="address">Street Address</label>
-                    <input class="bgc" type="text" id="address" name="user-address" required>
+                        <label for="address">Street Address</label>
+                        <input class="bgc" type="text" id="address" name="user-address" placeholder="street + house number" required>
 
-                    <label for="city">City</label>
-                    <input class="bgc" type="text" id="city" name="user_city" required>
+                        <label for="city">City</label>
+                        <input class="bgc" type="text" id="city" name="user-city" required placeholder="required"> <br>
 
-                    <label for="state">State</label>
+                        <label for="state">State</label>
+                        <select class="bgc" id="state" name="user-state">
+                            <option value=""disabled selected hidden>Choose State</option>
+                            <optgroup label="North Holland">
+                                <option value="Amsterdam">Amsterdam</option>
+                                <option value="Amstelveen">Amstelveen</option>
+                                <option value="Haarlem">Haarlem</option>
+                            </optgroup>
 
-                    <select class="bgc" id="state" name="user_state">
-                        <optgroup label="North Holland">
-                            <option value="Amsterdam">Amsterdam</option>
-                            <option value="Amstelveen">Amstelveen</option>
-                            <option value="Haarlem">Haarlem</option>
-                        </optgroup>
+                            <optgroup label="Friesland">
+                                <option value="Groningen">Groningen</option>
+                                <option value="Leeuwarden">Leeuwarden</option>
+                            </optgroup>
 
-                        <optgroup label="Friesland">
-                            <option value="Groningen">Groningen</option>
-                            <option value="Leeuwarden">Leeuwarden</option>
-                        </optgroup>
-
-                        <optgroup label="Limburg">
-                            <option value="Maastricht">Maastricht</option>
-                            <option value="Venia">Venia</option>
-                        </optgroup>
-                    </select>
-
-                    <label for="zip_code">Zip Code</label>
-                    <input class="bgc" type="text" id="zip_code" name="user_zipcode" required>
+                            <optgroup label="Limburg">
+                                <option value="Maastricht">Maastricht</option>
+                                <option value="Venia">Venia</option>
+                            </optgroup>
+                        </select> <br>
+                    <div class="zc">
+                        <label for="zip-code">Zip Code</label>
+                        <input class="bgc" type="text" id="zip-code" name="user-zipcode" placeholder="required"> 
+                    </div>
                 </fieldset>
+
+                <hr class="hr3">
 
                 <div class="newsletter-container">
                     <fieldset class="user-newsletters">
@@ -93,7 +96,7 @@
                         </div>
 
                         <label>Other topics you'd like to hear about</label>
-                        <textarea class="bgc" id="topics"  rows="6" name="user_topics"></textarea>
+                        <textarea for="topics" class="bgc" id="topics"  rows="6" name="user-topics" placeholder="Please let us know your topic of interest"></textarea>
                     </fieldset>
                 </div>
 

@@ -39,7 +39,7 @@ hr {
     width: 90%;
 }
 
-.hr2 {
+.hr2, .hr3 {
     border: 1px solid black;
     width: 90%;
     margin-bottom: 10px;
@@ -61,7 +61,7 @@ fieldset {
     background: silver;
     border-radius: .5em; /*-this is for border radius-*/
     font-weight: 300;
-    width: 100%;
+    width:100%;
     border: none;
     height: auto;
     padding: 15px;
@@ -75,8 +75,14 @@ fieldset label {
     margin-bottom: 20px;
 }
 
-input#zip_code {
+.zc{
+    display: flex;
+    flex-direction: column;
+}
+
+input#zip-code {
     width: 50%;
+    margin-top: 0;
 }
 
 .newsletter-container {
@@ -120,23 +126,76 @@ footer {
 
 input:focus,
 textarea:focus,
+select:focus,
 .bgc:hover {
     background-color: aliceblue;
     border-bottom: 3px solid rgba(0,0,0,0.05);
     border-color: rebeccapurple;
+    height: 65px;
+    transition: height 2s;
 }
 
 
 
 @media screen and (min-width: 768px) {
 
+    div#container{
+     max-width: 600px;
+    }
+    
+    .user-contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    label{ margin-right: 20px;}
+
+    label[for*="city"] {
+        margin-right: 140px;
+    }
+
+    label[for*="state"] {
+        margin-right: 130px;
+    }
+
+     .bgc {
+        max-width: 70%;
+    }
+
     h1 {
         padding: 10px;
         font-size: 1.5em;
     }
 
-    input#zip_code {
+    hr.hr3{
+        min-width: 100%;
+    }
+
+    div.zc{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    label[for*="zip-code"] {
+        margin-right: 110px;
+    }
+    
+    input#zip-code {
         width: 25%;
     }
+
+    textarea#topics.bgc {
+        min-width: 100%;
+    }
+
+    textarea#topics:focus {
+        height: 200px;
+        transition: height 2s;
+    }
+
+
+
 
 }
