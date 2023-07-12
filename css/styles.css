@@ -1,23 +1,21 @@
-/*------- Base styles---------*/
-
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    color: #384047;
+    font-family: "Lato",sans-serif;
+    color: #384047
 }
 
 #container {
     max-width: 500px;
-    margin: auto;
+    margin: auto
 }
 
-.header-content {
+.header-content,h1 {
     margin: 30px 0;
     padding: 0 20px;
-    text-align: center;
+    text-align: center
 }
 
 h1 {
@@ -25,170 +23,165 @@ h1 {
     color: #f0f1f3;
     margin: 0;
     padding: 20px 10px;
-    text-align: center;
-    text-transform: uppercase;
-    font-style: italic;
+    text-transform: uppercase
+}
+
+footer,h1,h2 {
+    font-style: italic
 }
 
 h2 {
-    font-weight:700;
-    font-size: x-large;
-    font-style: italic;
+    font-weight: 700;
+    font-size: x-large
 }
 
 hr {
-    border: 3px solid black;
-    width: 90%;
+    border: 3px solid #000;
+    width: 90%
 }
 
-.hr2, .hr3 {
-    border: 1px solid black;
+.hr2,.hr3 {
+    border: 1px solid #000;
     width: 90%;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 fieldset {
-    border-style: none;
+    border-style: none
 }
 
- legend.contact-info, legend.newsletter-heading {
-    font-weight:700;
+legend.contact-info,legend.newsletter-heading {
+    font-weight: 700;
     font-size: large;
     font-style: italic;
-    padding: 10px 0;
+    padding: 10px 0
+}
+
+#button,.bgc {
+    padding: 15px;
+    border: 0
 }
 
 .bgc {
     background: silver;
-    border-radius: .5em; /*-this is for border radius-*/
     font-weight: 300;
-    width:100%;
-    border: none;
+    width: 100%;
     height: auto;
-    padding: 15px;
     outline: 0;
-    margin: 10px 0 1.2em 0;
+    margin: 10px 0 1.2em;
     border-radius: .3em;
-    box-shadow: 2px 2px rgba(0,0,0,0.03) inset;
+    box-shadow: 2px 2px rgba(0,0,0,.03) inset
 }
 
 fieldset label {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
-.zc{
+.zc {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 input#zip-code {
     width: 50%;
-    margin-top: 0;
+    margin-top: 0
 }
 
 .newsletter-container {
     line-height: 1.5em;
-    background: cornsilk;
+    background: #fff8dc
 }
 
-.check, .radio {
-    padding: 10px 0;
+.check,.radio {
+    padding: 10px 0
+}
+
+p,textarea {
+    margin-top: 10px
 }
 
 p {
-    margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0
 }
 
 textarea {
-    margin-top: 10px;
-    width: fit-content;
+    width: fit-content
 }
 
-input[type="submit"] {
-    cursor: pointer;
-} /* for the mouse when it hovers the submit button*/
+input[type=submit] {
+    cursor: pointer
+}
 
 #button {
-    background: rgb(185, 185, 238);
+    background: #b9b9ee;
     font-weight: 500;
     margin: 1em;
-    padding: 15px;
-    border: none;
     border-radius: .5em;
-    width: 90%;
+    width: 90%
 }
- 
+
 footer {
-    text-align: center;
-    font-style: italic;
+    text-align: center
 }
 
-input, textarea, select, 
-.bgc {
-    border-bottom: 3px solid transparent;
+.bgc,input,select,textarea {
+    border-bottom: 3px solid transparent
 }
 
-input:focus,
-textarea:focus,
-select:focus,
- .bgc:focus{
-    background-color: aliceblue;
-    border-bottom: 3px solid rgba(0,0,0,0.05);
-    border-color: rebeccapurple;
-    transition: 2s;
+.bgc:focus,input:focus,select:focus,textarea:focus {
+    background-color: #f0f8ff;
+    border-bottom: 3px solid rgba(0,0,0,.05);
+    border-color: #639;
+    transition: 2s
 }
 
-@media screen and (min-width: 768px) {
-
-    div#container{
-     max-width: 600px;
+@media screen and (min-width:768px) {
+    div#container {
+        max-width: 600px
     }
-    
+
     .user-contact {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: center
     }
 
-    label{ margin-right: 20px;}
-
-    label[for*="city"] {
-        margin-right: 140px;
+    label {
+        margin-right: 20px
     }
 
-    label[for*="state"] {
-        margin-right: 130px;
+    label[for*=city] {
+        margin-right: 140px
     }
 
-     .bgc {
-        max-width: 70%;
+    label[for*=state] {
+        margin-right: 130px
+    }
+
+    .bgc {
+        max-width: 70%
     }
 
     h1 {
         padding: 10px;
-        font-size: 1.5em;
+        font-size: 1.5em
     }
 
-    hr.hr3{
-        min-width: 100%;
+    hr.hr3,textarea#topics.bgc {
+        min-width: 100%
     }
 
-    div.zc{
+    div.zc {
         flex-direction: row;
-        align-items: center;
+        align-items: center
     }
 
-    label[for*="zip-code"] {
-        margin-right: 110px;
+    label[for*=zip-code] {
+        margin-right: 110px
     }
-    
+
     input#zip-code {
-        width: 25%;
-    }
-
-    textarea#topics.bgc {
-        min-width: 100%;
+        width: 25%
     }
 }
